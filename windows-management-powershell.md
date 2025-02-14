@@ -183,3 +183,14 @@ delete stuff in recycle bin:
 ```
 Clear-recyclebin
 ```
+
+## Logging
+Find error logs:
+```
+Get-EventLog System -After (Get-Date).AddHours(-1) | where EntryType -eq Error
+```
+
+Check log by its Index:
+```
+Get-EventLog System | where Index -eq 66802 | format-list *
+```
