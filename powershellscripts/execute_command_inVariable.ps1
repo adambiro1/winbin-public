@@ -1,2 +1,0 @@
-$command = 'Get-ChildItem'
-& $command

@@ -1,1 +1,0 @@
-get-service -Name cy.... | get-member start
